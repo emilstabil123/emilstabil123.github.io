@@ -11,3 +11,13 @@ img {
     margin-left: 0;
     margin-right: auto;
     }
+
+body {
+    background-image: url('CrispBaggrund.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+    margin: 0;    
+    }
+    
