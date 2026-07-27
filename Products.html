@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <title>SodaShop</title>
+        <title>Kamph Honeteknik</title>
         <link rel='stylesheet' href="styles.css">     
     </head>
 
@@ -10,7 +10,7 @@
         <nav class="topbar">
 
             <div>
-                SodaShop
+                Kamph Honeteknik
                 <button onclick="setLanguage('de')">🇩🇪</button>
                 <button onclick="setLanguage('en')">🇬🇧</button>
             </div>
@@ -32,22 +32,57 @@
 
       <h1>Products</h1>
 
-      <div>
+      <div class="product-row">
+        <div>
         <img class="blød-kant" src="honebørste.jpg" alt="Honebørster">
-        <button1 onclick="addStandard()">+1</button1>
-        <button2 onclick="fjernStandard()">-1</button2>
-      </div>
 
-      <div>
-        <img class="blød-kant" src="Børste3.jpg" alt="Honebørster3">
-        <button1 onclick="addPro()">+1</button1>
-        <button2 onclick="fjernPro()">-1</button2>
-      </div>
+    
+  </div>
 
-      <div>
-        <img class="blød-kant" src="BørsteSmå.jpg" alt="Honebørster3Små">
-        <button1 onclick="addCompact()">+1</button1>
-        <button2 onclick="fjernCompact()">-1</button2>
+  <div class="product-text">
+    <h2>Honebørste Standard</h2>
+    <p>En honebørste til slibning og finish af metalrør.</p>
+    <p>Pris: 249 kr.</p>
+    <div class="buttons">
+      <button1 onclick="addStandard()">+1</button1>
+      <button2 onclick="fjernStandard()">-1</button2>
+    </div>
+  </div>
+</div>
+
+      <div class="product-row">
+  <div>
+    <img class="blød-kant" src="Børste3.jpg" alt="Honebørste Pro">
+
+  </div>
+
+  <div class="product-text">
+    <h2>Honebørste Pro</h2>
+    <p>En kraftigere honebørste til krævende slibning af metalrør.</p>
+    <p>Pris: 389 kr.</p>
+    <div class="buttons">
+      <button1 onclick="addPro()">+1</button1>
+      <button2 onclick="fjernPro()">-1</button2>
+    </div>
+  </div>
+</div>
+
+      <div class="product-row">
+  <div>
+    <img class="blød-kant" src="BørsteSmå.jpg" alt="Honebørster3Små">
+    
+  </div>
+
+  <div class="product-text">
+    <h2>Honebørste Compact</h2>
+    <p>En kompakt honebørste til pladsbesparende lagring og brug.</p>
+    <p>Pris: 199 kr.</p>
+    <div class="buttons">
+      <button1 onclick="addCompact()">+1</button1>
+      <button2 onclick="fjernCompact()">-1</button2>
+    </div>
+  </div>
+</div>
       </div>
       
       <footer>    

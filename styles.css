@@ -3,7 +3,7 @@ h1 {
     font-size:32px;
     text-align:left;
     padding-top: 100px;
-    padding-left: 40px;
+    padding-left: 90px;
     }
 
 h2 {
@@ -32,6 +32,14 @@ body {
     color: white;
 }
 
+footer {
+    color: white;
+    padding-left: 90px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
 button1 {
     background-color: #a4a4a4;
     color: white;
@@ -40,7 +48,7 @@ button1 {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    margin-left: 40px;
+    margin-left: 0px;
 }
 
 button2 {
@@ -106,4 +114,20 @@ button2 {
 .right-side {
   padding: 40px;
   padding-top: 40px;
+}
+
+.product-row {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin: 40px;
+}
+
+.product-text {
+  color: white;
+  max-width: 400px;
+}
+
+.product-text h2 {
+  color: white;
 }
