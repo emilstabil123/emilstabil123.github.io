@@ -1,12 +1,60 @@
 <!doctype html>
-<html lang="da">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
-  </head>
-  <body>
-    <h1>Products</h1>
-    <p>Her er nogle tilfældige produkter: solpaneler, en vandflaske og en superhurtig computer.</p>
-  </body>
+<html>
+
+    <head>
+        <title>SodaShop</title>
+        <link rel='stylesheet' href="styles.css">     
+    </head>
+
+    <header>
+        <nav class="topbar">
+
+            <div>
+                SodaShop
+                <button onclick="setLanguage('de')">🇩🇪</button>
+                <button onclick="setLanguage('en')">🇬🇧</button>
+            </div>
+            
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="Products.html">Products</a>
+                <a href="Contact.html">Contact</a>
+            </nav>
+
+            <a class="cart" href="cart.html" aria-label="Kurv">
+            🛒 <span id="resultat">0</span>
+            </a>
+
+        </nav>
+    </header>
+
+    <body>
+
+      <h1>Products</h1>
+
+      <div>
+        <img class="blød-kant" src="honebørste.jpg" alt="Honebørster">
+        <button id ="knap">+1</button>
+        <button id ="fjernKnap">-1</button>
+      </div>
+
+      <div>
+        <img class="blød-kant" src="Børste3.jpg" alt="Honebørster3">
+        <button id ="knap">+1</button>
+        <button id ="fjernKnap">-1</button>
+      </div>
+
+      <div>
+        <img class="blød-kant" src="BørsteSmå.jpg" alt="Honebørster3Små">
+        <button id ="knap">+1</button>
+        <button id ="fjernKnap">-1</button>
+      </div>
+      
+      <footer>    
+          <p>2026</p>
+      </footer>
+
+      <script src="script.js"></script>
+    </body>
+
 </html>
