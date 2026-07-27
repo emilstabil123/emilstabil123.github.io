@@ -1,12 +1,13 @@
 h1 {
-    color:blue;
+    color:rgb(255, 255, 255);
     font-size:32px;
     text-align:left;
     padding-top: 100px;
+    padding-left: 40px;
     }
 
 h2 {
-    color:blue;
+    color:rgb(255, 255, 255);
     font-size:32px;
     text-align:left;
     }
@@ -17,6 +18,9 @@ img {
     display: block;
     margin-left: 0;
     margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 40px;
     }
 
 body {
@@ -67,4 +71,20 @@ body {
     display: block;
     margin-left: 0;
     margin-right: auto;
+}
+
+.two-columns {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  min-height: 500px;
+}
+
+.left-side {
+  padding: 40px;
+  border-right: 2px solid black;
+}
+
+.right-side {
+  padding: 40px;
+  padding-top: 40px;
 }

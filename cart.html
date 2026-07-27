@@ -3,10 +3,41 @@
   <head>
     <meta charset="UTF-8">
     <title>Din kurv</title>
+    <link rel="stylesheet" href="styles.css">
+    
   </head>
+
+  <header>
+        <nav class="topbar">
+
+            <div>
+                SodaShop
+                <button onclick="setLanguage('de')">🇩🇪</button>
+                <button onclick="setLanguage('en')">🇬🇧</button>
+            </div>
+            
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="Products.html">Products</a>
+                <a href="Contact.html">Contact</a>
+            </nav>
+
+            <a class="cart" href="cart.html" aria-label="Kurv">
+            🛒 <span id="resultat">0</span>
+            </a>
+
+        </nav>
+  </header>
+
   <body>
-    <h1>Din kurv</h1>
-    <p>Din kurv er tom.</p>
-    <a href="index.html">Tilbage til forsiden</a>
+    <h1>Din ordre</h1>
+
+    <p>Standard: <span id="standard-antal">0</span></p>
+    <p>Pro: <span id="pro-antal">0</span></p>
+    <p>Compact: <span id="compact-antal">0</span></p>
+
+    <p>Samlet pris: <span id="total-pris">0 kr.</span></p>
+    
+    <script src="script.js"></script>
   </body>
 </html>

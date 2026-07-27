@@ -1,28 +1,80 @@
-let kurv = Number(localStorage.getItem("kurv")) || 0;
+let standard = Number(localStorage.getItem("standard")) || 0;
+let pro = Number(localStorage.getItem("pro")) || 0;
+let compact = Number(localStorage.getItem("compact")) || 0;
 
-document.getElementById("resultat").textContent = kurv;
+function opdaterKurv() {
+  let antal = standard + pro + compact;
+  let pris = standard * 249 + pro * 389 + compact * 199;
 
-function addkurv() {
-    kurv = kurv + 1;
-    localStorage.setItem("kurv", kurv);
-    document.getElementById("resultat").textContent = kurv;
+  document.querySelectorAll("#resultat").forEach(function(element) {
+    element.textContent = antal;
+  });
+
+  let totalPris = document.getElementById("total-pris");
+
+  if (totalPris) {
+    totalPris.textContent = pris + " kr.";
+  }
+
+  let standardAntal = document.getElementById("standard-antal");
+  let proAntal = document.getElementById("pro-antal");
+  let compactAntal = document.getElementById("compact-antal");
+
+  if (standardAntal) {
+    standardAntal.textContent = standard;
+  }
+
+  if (proAntal) {
+    proAntal.textContent = pro;
+  }
+
+  if (compactAntal) {
+    compactAntal.textContent = compact;
+  }
 }
 
-function fjernkurv() {
-    if (kurv > 0) {
-        kurv = kurv - 1;
-        localStorage.setItem("kurv", kurv);
-        document.getElementById("resultat").textContent = kurv;
-    }
+function addStandard() {
+  standard = standard + 1;
+  localStorage.setItem("standard", standard);
+  opdaterKurv();
 }
 
-let addButtons = document.querySelectorAll(".add-button");
-let removeButtons = document.querySelectorAll(".remove-button");
+function fjernStandard() {
+  if (standard > 0) {
+    standard = standard - 1;
+    localStorage.setItem("standard", standard);
+    opdaterKurv();
+  }
+}
 
-addButtons.forEach(function(button) {
-  button.addEventListener("click", addkurv);
-});
+function addPro() {
+  pro = pro + 1;
+  localStorage.setItem("pro", pro);
+  opdaterKurv();
+}
 
-removeButtons.forEach(function(button) {
-  button.addEventListener("click", fjernkurv);
-});
+function fjernPro() {
+  if (pro > 0) {
+    pro = pro - 1;
+    localStorage.setItem("pro", pro);
+    opdaterKurv();
+  }
+}
+
+function addCompact() {
+  compact = compact + 1;
+  localStorage.setItem("compact", compact);
+  opdaterKurv();
+}
+
+function fjernCompact() {
+  if (compact > 0) {
+    compact = compact - 1;
+    localStorage.setItem("compact", compact);
+    opdaterKurv();
+  }
+}
+
+
+
+opdaterKurv();
