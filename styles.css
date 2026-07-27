@@ -16,11 +16,8 @@ img {
     width: 600px;
     height: auto;
     display: block;
-    margin-left: 0;
-    margin-right: auto;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 40px;
+    margin: 50px 0 20px 40px;
+    padding: 0;
     }
 
 body {
@@ -33,6 +30,28 @@ body {
 
     min-height: 100vh;
     color: white;
+}
+
+button1 {
+    background-color: #a4a4a4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 40px;
+}
+
+button2 {
+    background-color: #a4a4a4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+
 }
     
 .topbar {
@@ -58,18 +77,18 @@ body {
 
 .cart span {
   font-size: 14px;
-  background-color: red;
+  background-color: rgb(8, 113, 24);
   color: white;
   border-radius: 50%;
   padding: 2px 6px;
 }
 
 .blød-kant {
-    border-radius: 10%;
+    border-radius: 50px;
     width: 600px;
     height: auto;
     display: block;
-    margin-left: 0;
+    margin-left: 40px;
     margin-right: auto;
 }
 
