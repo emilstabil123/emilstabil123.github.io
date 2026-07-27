@@ -16,13 +16,13 @@ function fjernkurv() {
     }
 }
 
-let tilføjKnap = document.getElementById("knap");
-let fjernKnap = document.getElementById("fjernKnap");
+let addButtons = document.querySelectorAll(".add-button");
+let removeButtons = document.querySelectorAll(".remove-button");
 
-if (tilføjKnap) {
-    tilføjKnap.addEventListener("click", addkurv);
-}
+addButtons.forEach(function(button) {
+  button.addEventListener("click", addkurv);
+});
 
-if (fjernKnap) {
-    fjernKnap.addEventListener("click", fjernkurv);
-}
+removeButtons.forEach(function(button) {
+  button.addEventListener("click", fjernkurv);
+});
