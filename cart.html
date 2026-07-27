@@ -32,11 +32,37 @@
   <body>
     <h1>Din ordre</h1>
 
-    <p>Standard: <span id="standard-antal">0</span></p>
-    <p>Pro: <span id="pro-antal">0</span></p>
-    <p>Compact: <span id="compact-antal">0</span></p>
+    <div class="cart-product">
+      <h2>Honebørste Standard</h2>
 
-    <p>Samlet pris: <span id="total-pris">0 kr.</span></p>
+      <button onclick="fjernStandard()">−</button>
+      <span id="standard-antal">0</span>
+      <button onclick="addStandard()">+</button>
+
+      <p>249 kr. pr. stk.</p>
+    </div>
+
+    <div class="cart-product">
+      <h2>Honebørste Pro</h2>
+
+      <button onclick="fjernPro()">−</button>
+      <span id="pro-antal">0</span>
+      <button onclick="addPro()">+</button>
+
+      <p>389 kr. pr. stk.</p>
+    </div>
+
+    <div class="cart-product">
+      <h2>Honebørste Compact</h2>
+
+      <button onclick="fjernCompact()">−</button>
+      <span id="compact-antal">0</span>
+      <button onclick="addCompact()">+</button>
+
+      <p>199 kr. pr. stk.</p>
+    </div>
+
+    <h1>Samlet pris: <span id="total-pris">0 kr.</span></h1>
     
     <script src="script.js"></script>
   </body>

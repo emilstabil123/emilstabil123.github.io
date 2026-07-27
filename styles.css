@@ -8,9 +8,17 @@ h1 {
 
 h2 {
     color:rgb(255, 255, 255);
-    font-size:32px;
+    font-size:16px;
     text-align:left;
+    font-weight: normal;
     }
+
+h3 {
+color:rgb(255, 255, 255);
+font-size:16px;
+text-align:left;
+font-weight: bold;
+}
 
 img {
     width: 600px;
@@ -81,6 +89,11 @@ button2 {
   color: black;
   font-size: 22px;
   margin-left: 12px;
+}
+
+.cart-product {
+  padding-left: 90px;
+  padding-top: 20px;
 }
 
 .cart span {
