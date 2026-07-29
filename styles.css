@@ -130,6 +130,10 @@ button2 {
   padding-top: 40px;
 }
 
+.right-side h2 {
+  padding-left: 0;
+}
+
 .right-heading {
   padding-left: 0;
   padding-top: 100px;
