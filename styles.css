@@ -102,6 +102,10 @@ button2 {
   padding-top: 20px;
 }
 
+.cart-product h2 {
+  padding-left: 0;
+}
+
 .cart span {
   font-size: 14px;
   background-color: rgb(8, 113, 24);
