@@ -84,11 +84,9 @@ let slides = ["Slide1.jpg", "Slide2.jpg", "Slide3.jpg"];
 let slideNumber = 0;
 
 let slideImage = document.getElementById("slide-image");
-let nextSlide = document.getElementById("next-slide");
-let previousSlide = document.getElementById("previous-slide");
 
 if (slideImage) {
-  nextSlide.addEventListener("click", function() {
+  setInterval(function() {
     slideNumber = slideNumber + 1;
 
     if (slideNumber === slides.length) {
@@ -96,15 +94,5 @@ if (slideImage) {
     }
 
     slideImage.src = slides[slideNumber];
-  });
-
-  previousSlide.addEventListener("click", function() {
-    slideNumber = slideNumber - 1;
-
-    if (slideNumber < 0) {
-      slideNumber = slides.length - 1;
-    }
-
-    slideImage.src = slides[slideNumber];
-  });
+  }, 3000);
 }
