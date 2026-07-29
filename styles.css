@@ -85,6 +85,11 @@ button2 {
   z-index: 1000;
 }
 
+.topbar > div {
+  color:#111111;
+  font-weight: bold;
+}
+
 .cart {
   text-decoration: none;
   color: black;
