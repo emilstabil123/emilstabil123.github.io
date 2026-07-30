@@ -239,3 +239,8 @@ button2 {
   cursor: pointer;
   margin-top: 10px;
 }
+
+.contact-form h2 {
+  padding-left: 0;
+  margin-top: -20px;
+}
