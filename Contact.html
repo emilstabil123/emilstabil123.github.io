@@ -30,8 +30,35 @@
   </header>
 
   <body>
-    <h1>Kontakt os i dag!</h1>
-    <h2>Her er lidt tilfældig kontakttekst: Hej med dig! 🌞</h2>
-    <script src="script.js"></script>
+   <h1>Kontakt os i dag!</h1>
+
+    <form class="contact-form">
+    <h2>Har du en honeopgave, vi skal hjælpe med?</h2>
+
+      <label for="navn">Navn</label>
+      <input id="navn" type="text">
+
+      <label for="firma">Firma</label>
+      <input id="firma" type="text">
+
+      <label for="tlf">Tlf.</label>
+      <input id="tlf" type="tel">
+
+      <label for="mail">Mail</label>
+      <input id="mail" type="email">
+
+      <label for="info">Info om honeopgave</label>
+      <textarea id="info" rows="5"></textarea>
+
+      <label>
+      <input type="checkbox">
+      Skriv dig op til vores nyhedsbrev
+      </label>
+
+          <button class="send-button" type="submit">Send</button>
+
+    </form>
+
+      <script src="script.js"></script>
   </body>
 </html>

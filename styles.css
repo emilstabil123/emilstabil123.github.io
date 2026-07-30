@@ -214,3 +214,28 @@ button2 {
   padding: 8px 16px;
   cursor: pointer;
 }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 400px;
+  margin: 40px 0 0 90px;
+}
+
+.contact-form input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.send-button {
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
